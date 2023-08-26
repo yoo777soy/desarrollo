@@ -1,0 +1,377 @@
+         /*declarar constantes de diseño para las 
+fuentes, colores y recursos*/
+    
+     :root {
+        --textos: 'Lato', sans-serif;
+        --titulos: 'Roboto', sans-serif;
+        --colorFondo: rgb(238, 224, 224);
+        --colorHeader: rgba(41, 36, 36, 0.6);
+        --colorFooter: #000;
+    }
+    /* estilos para el cuerpo (body)
+   se utiliza el selector de etiqueta*/
+    /*configuraciones globales*/
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-image: url("images/conectividad.jpg");
+        font-family: var(--textos);
+        font-size: 1.2rem;
+        /*rem representa 12 px*/
+    }
+    
+    h1 {
+        font-family: var(--titulos);
+        font-size: 3.8rem;
+        font-weight: bold;
+        color: rgb(240, 9, 9)
+    }
+    
+    h4 {
+        font-size: 1.8rem;
+        font-family: var(--titulos);
+        margin-bottom: 1px;
+    }
+    
+    h3 {
+        background-color: #291B5D;
+        font-size: 1.8rem;
+        font-family: var(--titulos);
+        color: white;
+        padding-bottom: 3px;
+        margin-bottom: 1px;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25%;
+        border: solid 12px #632aa5;
+        ;
+    }
+    
+    h6 {
+        color: rgb(247, 242, 242);
+        background: white;
+        position: absolute;
+        left: 100px;
+        background-color: #2B2062;
+        height: 20px;
+        border-radius: 20%;
+        border: solid 1px #006e8e;
+    }
+    
+    .btn-wsp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        line-height: 63px;
+        bottom: 25px;
+        right: 25px;
+        background: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 35px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        transition: all 300ms ease;
+    }
+    
+    .btn-wsp:hover {
+        background: #20ba5a;
+    }
+    /*sintaxis para las clases en css es con punto (.)*/
+    
+    .home-wrapper {
+        background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.6)), url('../images/bac2.jpg') no-repeat center top;
+        background-size: cover;
+        color: #000;
+    }
+    /*header*/
+    
+    header {
+        position: fixed;
+        /*fija el elemento en el html*/
+        width: 100%;
+        background-color: var(--colorHeader);
+        padding: 10px;
+        height: 33%;
+    }
+    
+    header img {
+        left: 11px;
+        height: auto;
+        border: solid 7px #291B5D;
+    }
+    
+    header nav {
+        float: right;
+        margin-top: 10px;
+        margin-right: 50%;
+    }
+    
+    header nav a {
+        color: rgb(248, 247, 253);
+        text-decoration: none;
+        margin-left: 10px;
+        font-weight: bold;
+        padding: 10px 15px;
+    }
+    
+    header nav a:hover {
+        color: #141014;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
+    header nav a.active {
+        color: rgb(147, 52, 167) !important;
+        /* background-color: #6b066e3f; */
+        border-radius: 3px;
+    }
+    /*home*/
+    /*los identificadores (id) en el html, su sintaxis en css es el numeral (#) */
+    
+    #home {
+        text-align: center;
+        padding: 200px 0 150px;
+    }
+    
+    #home h1 {
+        margin-bottom: 40px;
+        line-height: 1.2;
+    }
+    
+    #home p {
+        font-size: 1.4rem;
+        margin-top: 40px;
+        color: #fff;
+        margin-left: 20%;
+    }
+    
+    #home .social {
+        margin-top: 80px;
+    }
+    
+    #home .social a {
+        color: var(--colorFondo);
+        display: inline-block;
+        background-color: var(--colorFooter);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 10px;
+        line-height: 50px;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        transition: all .3s;
+    }
+    
+    #home .social a:hover {
+        background-color: #632aa5;
+    }
+    
+    #home {
+        text-align: center;
+        padding: 200px 0 150px;
+    }
+    
+    #home h1 {
+        margin-bottom: 40px;
+        line-height: 1.2;
+    }
+    
+    #home p {
+        font-size: 1.4rem;
+        margin-top: 40px;
+        color: #fff;
+    }
+    
+    #home .divider {
+        width: 250px;
+        margin: 0 auto;
+        border-top: 5px solid red;
+    }
+    
+    #home .social {
+        margin-top: 80px;
+    }
+    
+    #home .social a:hover {
+        background-color: #6a06ad;
+    }
+    /*secciones*/
+    
+    p {
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 80%;
+    }
+    
+    section h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 70px;
+    }
+    /*servicios*/
+    
+    #servicios .box {
+        display: inline-block;
+        padding-left: 30%;
+        padding-bottom: 10px;
+        box-sizing: content-box;
+    }
+    
+    h3,
+    h6 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    h2 {
+        color: white;
+    }
+    /*Portafolio*/
+    
+    .box {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+        padding: 1%;
+        border: solid 7px #291B5D;
+    }
+    /* organizacin */
+    
+    #organizacion .box h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    #portafolio {
+        background-color: #001F35;
+    }
+    
+    .parrafo {
+        margin-left: 33%;
+        color: #291B5D;
+        ;
+    }
+    
+    iframe {
+        border: solid 7px#291B5D;
+    }
+    
+    h4 {
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    
+    .whatsapp {
+        background-color: violet
+    }
+    
+    a.btn-wsp {
+        background: #20ba5a;
+    }
+    
+    @media only screen and (min-width:320px) and (max-width:768px) {
+        .btn-wsp {
+            width: 63px;
+            height: 63px;
+            line-height: 66px;
+        }
+    }
+    
+    .whatsapp {
+        background-color: #20ba5a;
+    }
+    
+    .publicidad {
+        background-color: #727e83;
+    }
+    
+    .enlace {
+        background-color: #024D4D;
+        margin-left: 40%;
+        margin-right: 40%;
+        text-align: center;
+        border: solid 7px#632aa5;
+        border-radius: 15%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .section {
+        background-color: #183537;
+        margin-left: 1px;
+    }
+    
+    #contacto {
+        background-color: #00273B;
+        color: #20ba5a;
+    }
+    
+    #contacto h2 {
+        color: #20ba5a;
+    }
+    
+    .caja {
+        background-color: #183537;
+    }
+    
+    .sub {
+        border-bottom: solid 5px #251A5D;
+        border-radius: 4px;
+    }
+    
+    p {
+        background-color: #183537;
+    }
+    
+    .vendele {
+        background-color: #183537;
+    }
+    
+    .sub {
+        background-color: #632aa5;
+    }
+    
+    .porta {
+        background-color: #006e8e;
+    }
+    
+    .tienda {
+        background-color: #024C86;
+    }
+    
+    .ptigo {
+        background-color: #0178A3;
+    }
+    
+    img {
+        margin-left: 90px;
+        border: solid 7p#291B5D;
+        border-radius: 33%;
+    }
+    
+    .what {
+        color: #25d366;
+    }
+    
+    #icon {
+        border-radius: 50%;
+        border: solid 3px violet;
+    }
+    
+    .pie {
+        background-color: #024D4D;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
